@@ -1,24 +1,15 @@
 # 5-Stage Pipelined RISC-V Processor
 
+
 ## Overview
-This repository contains the Verilog implementation of a 5-stage pipelined processor based on the RISC-V instruction set architecture (ISA). The design follows a modular approach, progressing from a single-cycle datapath to a fully pipelined implementation.
+This repository contains a Verilog implementation of a 5-stage pipelined RISC-V processor, developed using the synthesizable subset of Verilog at the register-transfer level (RTL). The design progresses from a single-cycle datapath to a fully pipelined implementation with hazard resolution.
 
 ## Features
-Instruction Memory: Implements a memory module for storing and retrieving instructions.\n
-Decode Stage: Parses instructions and prepares operands for execution.
-Register File and Execute Stage: Handles register operations and arithmetic/logic computations.
-Memory and Writeback Stages: Includes memory access and final result storage.
-Pipelining: Optimizes execution with forwarding, bypassing, and stalling mechanisms.
+- **Modular Design**: Five distinct pipeline stages (Fetch, Decode, Execute, Memory, Writeback)
+- **RISC-V ISA Support**: Implements base integer instruction set (RV32I)
+- **Hazard Resolution**: Forwarding, bypassing, and stalling mechanisms
+- **Synthesizable Code**: Strict adherence to synthesizable Verilog subset
 
-├── src/
-│   ├── instruction_memory.v    # Instruction memory module
-│   ├── decode_stage.v          # Decode stage logic
-│   ├── register_file.v         # Register file implementation
-│   ├── execute_stage.v         # Execute stage logic
-│   ├── memory_stage.v          # Memory access logic
-│   ├── writeback_stage.v       # Writeback stage logic
-│   ├── full_datapath.v         # Complete single-cycle datapath
-│   ├── pipeline.v              # Pipelined processor implementation
-└── docs/
-    ├── architecture_diagram.pdf  # High-level processor architecture diagram
-    ├── module_specs.md           # Detailed specifications for each module
+## Directory Structure
+
+<img width="732" alt="Screenshot 2025-04-06 at 9 04 33 PM" src="https://github.com/user-attachments/assets/6a19a55d-f41e-44f8-abfc-91c613a6f0ce" />
