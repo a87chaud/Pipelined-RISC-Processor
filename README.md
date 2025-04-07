@@ -4,7 +4,7 @@
 This repository contains the Verilog implementation of a 5-stage pipelined processor based on the RISC-V instruction set architecture (ISA). The design follows a modular approach, progressing from a single-cycle datapath to a fully pipelined implementation.
 
 ## Features
-Instruction Memory: Implements a memory module for storing and retrieving instructions.
+Instruction Memory: Implements a memory module for storing and retrieving instructions.\n
 Decode Stage: Parses instructions and prepares operands for execution.
 Register File and Execute Stage: Handles register operations and arithmetic/logic computations.
 Memory and Writeback Stages: Includes memory access and final result storage.
