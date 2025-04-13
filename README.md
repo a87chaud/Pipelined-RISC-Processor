@@ -11,9 +11,8 @@ This repository contains a Verilog implementation of a 5-stage pipelined RISC-V 
 - **Synthesizable Code**: Strict adherence to synthesizable Verilog subset
 
 ## Branch Prediction Implementation
-The processor includes a branch predictor module (`branch_predictor.v`) to reduce the branch penalty. This module uses a 2-bit saturating counter for each entry in a local history table.
+The processor includes a branch predictor using a local branch prediction  (`branch_predictor.v`) to reduce the branch penalty. This module uses a 2-bit saturating counter for each entry in a local history table.
 
 
 ## Directory Structure
 
-<img width="732" alt="Screenshot 2025-04-06 at 9 04 33 PM" src="https://github.com/user-attachments/assets/6a19a55d-f41e-44f8-abfc-91c613a6f0ce" />
